@@ -1,0 +1,142 @@
+<html>
+<meta charset="UTF-8">
+  <head>
+	<title>Aplikace - Videopůjčovna</title>
+  </head>
+   <body>
+   <meta charset="UTF-8">
+        <body bgcolor="white" bg filter: alpha(opacity=1, style=10); text="black" link="black" vlink="black">
+            <h1 align="center"><big><big>Dokumentace</big></big></h1>
+      
+          <header>
+	      <h1 id="nadpis" align="center">Aplikace - Videopůjčovna</h1>
+	    </header>
+      
+       <nav>
+	    <ol>
+		  <a href="#nadpis"><lu>Nadpis</lu></a><br>
+          <a href="#uvod"><lu>Úvod</lu></a><br>
+          <a href="#metodika"><lu>Metodika</lu></a><br>
+          <a href="#elementy"><lu>Popis elementů a atributů</lu></a><br>
+		  <a href="#transformace"><lu>Popis transformace</lu></a><br>
+		  <a href="#zaver"> <lu>Závěr</lu></a>
+        </ol>
+	   </nav>
+	    <section>
+	        <article>
+		    <header>
+			<h2 id="uvod">Úvod</h2>
+			</header>
+                            <p>
+                                Dokumentace popisuje model databáze aplikace videopůjčovna, která vede evidenci filmů. Projekt zahrnuje pár záznamů v XML, struktura XML je pak popsána v XSD dokumentu a nakonec jedna transformace do JSON. Dokumentace je v HTML.
+                            </p>
+		</article>
+	    </section>
+	   
+	    <section>
+                <article>
+		    <header>
+			<h2 id="metodika">Metodika</h2>
+			</header>
+                            <p>
+                                Metodikou sestavení projektu spočívá zaprvé v navrhnutí modelu videopůjčovna a vymyšlení všech použitých elementů a atributů. Dále vytvoření XSD struktury a vygenerování XML dokumentu, do kterého se následně doplní záznamy. Následně se vytvoří XSLT s transformací a na závěr HTML dokumentace. Ke zpracování projektu je zapotřebí využití všech dostupných studijních materiálů.
+                            </p>
+		</article>
+            </section>
+	   
+	   <section>
+	      <article>
+		    <header>
+			<h2 id="elementy">Popis elementů a atributů</h2>
+                    </header>
+                  
+            <table border="1" cellpadding="1">
+                    <tr><td><b>videopůjčovna</b></td> <td>obsahuje tituly jednotlivých filmů</td></tr>
+            </table>
+       
+            <table border="1" cellpadding="1">
+                    <tr><td><b>video</b></td> <td> nabízené filmy
+                        <p> id_k - identifikační číslo filmu</p>
+                        <p> nazev - název filmu </p>
+                    </td></tr>                                                             
+                    <tr><td><b>nutne_udaje</b></td> <td> - nezbytné údaje</td></tr>
+                    <tr><td>original</td> <td> - originální název</td></tr>
+                    <tr><td>reziser</td> <td> - informace o reziserovi, obsahuje atribut a elementy
+                        <p> reziser_jmeno - jmeno rezisera </p>       
+                        <p> reziser_rok_nar - titul autora</p>
+                        <p> reziser_narodnost - narodnost rezisera</p>
+                    </td></tr>                       
+                    <tr><td>rok vydani</td> <td> - info o datumu vydání, obsahuje atribut a element
+                        <p> nazev_nakl - název nakladatelství</p>
+                        <p> nakl_adresa - adresa nakladatelství</p>
+                    </td></tr>                       
+                    <tr><td>film</td> <td> - zanr, obsahuje atribut a elementy
+                        <p> podzanr - dalsi zanry </p>
+                        <p> podzanr2 - dalsi zanry </p>
+                    </td></tr>                      
+                    <tr><td>studio</td> <td> - studio, které film vytvořilo</td></tr>
+                    <tr><td><b>dalsi_info</b></td> <td> - další informace o filmu</td></tr>
+                    <tr><td>jazyk</td> <td> - jazyk prodávaného filmu</td></tr>
+                    <tr><td>rozpocet</td> <td> - rozpocet na kolik daný film přišel
+                    <tr><td>celkový zisk</td> <td> - celosvětový zisk    
+                    </td></tr>
+                    <tr><td>scenar</td> <td> - autor scénáře pro daný film
+                        <p> scenarista_prijmeni - příjmení scénaristy</p>
+                    </td></tr>  
+                    <tr><td>oblibenost</td> <td> - oblíbenost daného filmu</td></tr>
+                    <tr><td>hlavni</td> <td> - hlavní postava filmu
+                        <p>povolani - povolani dane postavy</p>
+                        <p>vek - vek dane postavy</p>
+                        </td></tr>
+                    <tr><td>dostupnost</td> <td> - ukazatel zda je film dostupný  
+            </table>
+       
+            <table border="1" cellpadding="1">  
+                    <tr><td><b>kontakt</b></td> <td> - informace o majiteli obchodu
+                        <p> id_p - ID majitele</p>
+                    </td></tr>
+                    <tr><td>jmeno</td> <td> - křestní jméno majitele</td></tr>
+                    <tr><td>prijmeni</td> <td> - prijmeni majitele</td></tr>
+                    <tr><td>pohlavi</td> <td> - pohlaví majitele</td></tr>
+                    <tr><td>datnar</td> <td> - datum narození, obsahuje atribut a elementy
+                        <p> roknar - rok narození</p>
+                        <p> mesic - měsíc narození</p>
+                        <p> den - den narození</p>
+                    <tr><td>adresa</td> <td> - adresa bydliště, obsahuje další elementy
+                        <p> obec</p>
+                        <p> ulice</p>
+                        <p> cislo - číslo popisné</p>
+                        <p> PSC - poštovní směrovací číslo</p>
+                    <tr><td>pojistovna</td> <td> - pojišovna zaměstnance</td></tr>
+                    <tr><td>email</td> <td> - email zaměstnance</td></tr>
+            </table>
+                </article>
+            </section>
+	   
+	    <section>
+                <article>
+		    <header>
+			<h2 id="transormace">Transformace</h2>
+                    </header>
+                        <p>Proběhla transformace do JSON. Z prodávaných filmů byly zobrazeny ty, jež jsou ve videopůjčovně dostupné (jejich množství je větší než 0). U zobrazených filmů se vypsalo několik základních informací."</p>
+                </article>		 
+            </section>
+	   
+	    <section>
+                <article>
+                    <header>
+                        <h2 id="zaver">Závěr</h2>
+            <p>Všechny části projektu byly zkontrolovány validátory a jsou v pořádku.</p>
+                    </header>
+		</article>
+            </section>
+            <footer>
+                <p>__________________________________________________________</p>
+                <h4>
+                <p>David Vavřina</p>
+                <p>SYI</p>
+                <p>2. ročník</p>
+                </h4>
+            </footer>
+    </body>	
+</html>

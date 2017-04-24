@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videopujcovna>
+                             <video nazev="Spiderman" id_v="1">
+                               <nutne_udaje>
+                                 <Original>Spider-Man</Original>
+                                    <reziser prijmeni="Reimi">
+                                        <reziser_jmeno>Sam</reziser_jmeno>
+                                        <reziser_rok_nar>1959</reziser_rok_nar>
+                                        <reziser_narodnost>USA</reziser_narodnost>
+                                    </reziser>
+                                    <datum_vydani rok="2002">
+                                      <mesic>8</mesic>
+                                      <den>24</den>
+                                    </datum_vydani>
+                                    <film zanr="Sci_Fi">
+                                        <podzanr>komedie</podzanr>
+                                        <podzanr2>akcni</podzanr2>
+                                        </film>
+                                     <delka_filmu>121 minut</delka_filmu>   
+                                    <hlavni_role1>Tobey Maguiry</hlavni_role1>
+                                    <hlavni_role2>Kirsten Dunst</hlavni_role2>
+                                    <hlavni_role3>Willem Dafoe</hlavni_role3>                                    
+                                </nutne_udaje>
+                                  
+                                  
+                                <dalsi_info>
+                                  <studio>Columbia Pictures</studio>
+                                  <jazyk>EN</jazyk>
+                                  <rozpocet>139mil</rozpocet>
+                                  <celkovy_zisk>840mil</celkovy_zisk>
+                                  <scenar jmeno="David">
+                                    <scenarista_prijmeni>Koeep</scenarista_prijmeni>
+                                  </scenar> 
+                                  <oblibenost>7/10</oblibenost>                                                        
+                                  <hlavni postava="Peter Parker">
+                                  <povolani>Student</povolani>
+                                  <vek>17</vek>
+                                  </hlavni>
+                                  <dostupnost>0</dostupnost>
+                              </dalsi_info>
+                            </video>
+
+                            <video nazev="Rychle a zběsile" id_v="2">
+                               <nutne_udaje>
+                                 <Original>Fast and furious</Original>
+                                    <reziser prijmeni="Cohen">
+                                        <reziser_jmeno>Rob</reziser_jmeno>
+                                        <reziser_rok_nar>1949</reziser_rok_nar>
+                                        <reziser_narodnost>USA</reziser_narodnost>
+                                    </reziser>
+                                    <datum_vydani rok="2001">
+                                      <mesic>6</mesic>
+                                      <den>10</den>
+                                    </datum_vydani>
+                                    <film zanr="Akcni">
+                                        <podzanr>krimi</podzanr>
+                                        <podzanr2>thriller</podzanr2>
+                                        </film>
+                                     <delka_filmu>106 minut</delka_filmu>   
+                                    <hlavni_role1>Paul Walker</hlavni_role1>
+                                    <hlavni_role2>Vin Diesel</hlavni_role2>
+                                    <hlavni_role3>Michelle Rodriguez</hlavni_role3>                                    
+                                </nutne_udaje>
+                                  
+                                  
+                                <dalsi_info>
+                                  <studio>Universal Studios</studio>
+                                  <jazyk>EN</jazyk>
+                                  <rozpocet>76mil</rozpocet>
+                                  <celkovy_zisk>236mil</celkovy_zisk>
+                                  <scenar jmeno="Gary Scott">
+                                    <scenarista_prijmeni>Thompson</scenarista_prijmeni>
+                                  </scenar> 
+                                  <oblibenost>8/10</oblibenost>                                                        
+                                  <hlavni postava="Brian">
+                                    <povolani>Policie</povolani>
+                                    <vek>24</vek>
+                                  </hlavni>
+                                  <dostupnost>1</dostupnost>
+                              </dalsi_info>
+                            </video>
+
+                            <video nazev="Počátek" id_v="3">
+                               <nutne_udaje>
+                                 <Original>Inception</Original>
+                                    <reziser prijmeni="Nolan">
+                                        <reziser_jmeno>Christopher</reziser_jmeno>
+                                        <reziser_rok_nar>1970</reziser_rok_nar>
+                                        <reziser_narodnost>Anglie</reziser_narodnost>
+                                    </reziser>
+                                    <datum_vydani rok="2010">
+                                      <mesic>7</mesic>
+                                      <den>22</den>
+                                    </datum_vydani>
+                                    <film zanr="thriller">
+                                        <podzanr>sci-fi</podzanr>
+                                        <podzanr2>mysteriozni</podzanr2>
+                                        </film>
+                                     <delka_filmu>148 minut</delka_filmu>   
+                                    <hlavni_role1>Leonardo DiCaprio</hlavni_role1>
+                                    <hlavni_role2>Joseph Gordon-Levitt</hlavni_role2>
+                                    <hlavni_role3>Ellen Page</hlavni_role3>
+                                    <hlavni_role4>Tom Hardy</hlavni_role4>                                    
+                                </nutne_udaje>
+                                  
+                                  
+                                <dalsi_info>
+                                  <studio>Warner Bros</studio>
+                                  <jazyk>En s titulkami</jazyk>
+                                  <rozpocet>160mil</rozpocet>
+                                  <celkovy_zisk>300mil</celkovy_zisk>
+                                  <scenar jmeno="Christopher">
+                                    <scenarista_prijmeni>Nolan</scenarista_prijmeni>
+                                  </scenar> 
+                                  <oblibenost>9/10</oblibenost>                                                        
+                                  <hlavni postava="Dom Cobb">
+                                    <povolani>Zloděj</povolani>
+                                    <vek>35</vek>
+                                  </hlavni>
+                                  <dostupnost>1</dostupnost>
+                              </dalsi_info>
+                            </video>
+
+                         <kontakt id_p="1">
+                            <jmeno>David</jmeno>
+                            <prijmeni>Vomáčka</prijmeni>
+                            <pohlavi>muž</pohlavi>
+                            <datnar roknar="1980">
+                              <mesic>6</mesic>
+                              <den>20</den>
+                            </datnar>
+                            <adresa>
+                              <obec>Plzeň</obec>
+                              <ulice>U hřiště</ulice>
+                              <cislo>5</cislo>
+                              <PSC>30100</PSC>
+                            </adresa>       
+                            <email>d.vomacka@seznam.cz</email>
+                        </kontakt>
+</videopujcovna>

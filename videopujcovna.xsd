@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Mon Apr 24 2017 10:58:31 GMT+0200 (Central Europe Daylight Time) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="videopujcovna">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="video" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="nutne_udaje">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="Original" type="xs:string"></xs:element>
+                                                               <xs:element name="reziser">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="reziser_jmeno" type="xs:string"></xs:element>
+                                                                                 <xs:element name="reziser_rok_nar" type="xs:int"></xs:element>
+                                                                                 <xs:element name="reziser_narodnost" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="prijmeni" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="datum_vydani">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="mesic" type="xs:int"></xs:element>
+                                                                                 <xs:element name="den" type="xs:int"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="rok" type="xs:int"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="film">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="podzanr" type="xs:string"></xs:element>
+                                                                                 <xs:element name="podzanr2" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="zanr" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="delka_filmu" type="xs:string"></xs:element>
+                                                               <xs:element name="hlavni_role1" type="xs:string"></xs:element>
+                                                               <xs:element name="hlavni_role2" type="xs:string"></xs:element>
+                                                               <xs:element name="hlavni_role3" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="dalsi_info">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="studio" type="xs:string"></xs:element>
+                                                               <xs:element name="jazyk" type="xs:string"></xs:element>
+                                                               <xs:element name="rozpocet" type="xs:string"></xs:element>
+                                                               <xs:element name="celkovy_zisk" type="xs:string"></xs:element>
+                                                               <xs:element name="scenar">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="scenarista_prijmeni" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="jmeno" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="oblibenost" type="xs:string"></xs:element>
+                                                               <xs:element name="hlavni">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="povolani" type="xs:string"></xs:element>
+                                                                                 <xs:element name="vek" type="xs:int"></xs:element>
+                                                                           </xs:sequence>
+                                                                           <xs:attribute name="postava" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="nazev" type="xs:string"></xs:attribute>
+                                       <xs:attribute name="id_v" type="xs:int"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                           <xs:element name="kontakt">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="jmeno" type="xs:string"></xs:element>
+                                             <xs:element name="prijmeni" type="xs:string"></xs:element>
+                                             <xs:element name="pohlavi" type="xs:string"></xs:element>
+                                             <xs:element name="datnar">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="mesic" type="xs:int"></xs:element>
+                                                               <xs:element name="den" type="xs:int"></xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="roknar" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="adresa">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="obec" type="xs:string"></xs:element>
+                                                               <xs:element name="ulice" type="xs:string"></xs:element>
+                                                               <xs:element name="cislo" type="xs:int"></xs:element>
+                                                               <xs:element name="PSC" type="xs:int"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="email" type="xs:string"></xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="id_p" type="xs:int"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
+ 
